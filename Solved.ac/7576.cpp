@@ -11,13 +11,13 @@ struct loc
 int xx[4] = { 0,0,-1,1 };
 int yy[4] = { -1,1,0,0 };
 
-int a, b, c;
+int n, k, c;
 int box[1001][1001];
 queue<loc> qt;
 
 bool isInBox(const int x, const int y)
 {
-    return (0 <= x && x < a && 0 <= y && y < b);
+    return (0 <= x && x < n && 0 <= y && y < k);
 }
 
 void bfs()
@@ -44,10 +44,10 @@ void bfs()
 
 int main()
 {
-    cin >> a >> b;
+    cin >> n >> k;
     
-    for(int i=0; i<b; i++){
-        for(int j=0; j<a; j++){
+    for(int i=0; i<k; i++){
+        for(int j=0; j<n; j++){
             cin >> box[i][j];
             if(box[i][j] == 1) qt.push({j, i});
         }
@@ -56,8 +56,8 @@ int main()
     bfs();
 
     int m = 0;
-    for(int i=0; i<b; i++){
-        for(int j=0; j<a; j++)
+    for(int i=0; i<k; i++){
+        for(int j=0; j<n; j++)
         {
             if(box[i][j] == 0)
             {

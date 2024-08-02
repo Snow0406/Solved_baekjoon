@@ -12,13 +12,13 @@ int xx[6] = { 0,0,0,0,-1,1 };
 int yy[6] = { 0,0,-1,1,0,0 };
 int zz[6] = { -1,1,0,0,0,0 };
 
-int a, b, c;
+int n, k, c;
 int box[101][101][101];
 queue<loc> qt;
 
 bool isInBox(const int x, const int y, const int z)
 {
-    return (0 <= x && x < a && 0 <= y && y < b && 0 <= z && z < c);
+    return (0 <= x && x < n && 0 <= y && y < k && 0 <= z && z < c);
 }
 
 void bfs()
@@ -47,13 +47,13 @@ void bfs()
 
 int main()
 {
-    cin >> a >> b >> c;
+    cin >> n >> k >> c;
 
     for (int i= 0; i < c; i++)
     {
-        for(int j=0; j<b; j++)
+        for(int j=0; j<k; j++)
         {
-            for(int k=0; k<a; k++)
+            for(int k=0; k<n; k++)
             {
                 cin >> box[i][j][k];
                 if(box[i][j][k] == 1) qt.push({k,j,i});
@@ -66,9 +66,9 @@ int main()
     int m = 0;
     for (int i= 0; i < c; i++)
     {
-        for(int j=0; j<b; j++)
+        for(int j=0; j<k; j++)
         {
-            for(int k=0; k<a; k++)
+            for(int k=0; k<n; k++)
             {
                 if(box[i][j][k] == 0)
                 {
