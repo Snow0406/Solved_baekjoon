@@ -154,10 +154,12 @@
         </Link>
     </ItemDefinitionGroup>
     <ItemGroup>
-        <Folder Include="BaekJoon\Bronze\"/>
         <Folder Include="BaekJoon\Gold\"/>
         <Folder Include="BaekJoon\Silver\" />
         <Folder Include="nypc2024\"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="BaekJoon\Bronze\2588.cpp" />
     </ItemGroup>
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
     <ImportGroup Label="ExtensionTargets">
