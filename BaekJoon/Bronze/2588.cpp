@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-   int A, B;
-   cin >> A >> B;
+    int A, B;
+    cin >> A >> B;
 
     int a = A * (B % 10);
     int b = A * ((B % 100) / 10);
