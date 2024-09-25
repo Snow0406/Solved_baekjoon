@@ -157,6 +157,7 @@
         <Folder Include="BaekJoon\Bronze\" />
         <Folder Include="BaekJoon\Gold\" />
         <Folder Include="BaekJoon\Silver\" />
+        <Folder Include="BaekJoon\UnRank\" />
         <Folder Include="nypc2024\"/>
     </ItemGroup>
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
