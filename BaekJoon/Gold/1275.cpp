@@ -39,8 +39,8 @@ int main()
     cin.tie(0);
     cout.tie(0);
 
-    int N, Q;
-    cin >> N >> Q;
+    int N, M;
+    cin >> N >> M;
     
     vector<long long> arr(N);
 
