@@ -61,7 +61,7 @@ int main() {
 
         Init(arr, tree, 1, 0, N-1);
         
-        string result = "";
+        string result;
         for (int i = 0; i < K; i++) {
             char order;
             int a, b;
@@ -77,7 +77,7 @@ int main() {
             }
         }
 
-        cout << "답이다 이새깨 ! " << result << "\n";
+        cout  << result << "\n";
     }
     
     return 0;
