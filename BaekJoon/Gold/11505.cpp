@@ -27,13 +27,13 @@ void Update(vector<long long>&tree, int node, int start, int end, int index, lon
     tree[node] = (tree[node*2] * tree[node*2+1]) % 1000000007;
 }
 
-long long Multi(vector<long long>&tree, int node, int start, int end, int left, int right) {
+long long FindMin(vector<long long>&tree, int node, int start, int end, int left, int right) {
     if (left > end || right < start)
         return 1;
     if (left <= start && end <= right)
         return tree[node];
     int mid = (start + end) / 2;
-    return (Multi(tree, node*2, start, mid, left, right) * Multi(tree, node*2+1, mid+1, end, left, right)) % 1000000007;
+    return (FindMin(tree, node*2, start, mid, left, right) * FindMin(tree, node*2+1, mid+1, end, left, right)) % 1000000007;
 }
 
 int main() {
@@ -62,7 +62,7 @@ int main() {
             if (order == 1) {
                 Update(tree, 1, 0, N-1, a-1, b);
             } else if (order == 2) {
-                cout  << Multi(tree, 1, 0, N-1, a-1, b-1) << "\n";
+                cout  << FindMin(tree, 1, 0, N-1, a-1, b-1) << "\n";
  
             }
         }
