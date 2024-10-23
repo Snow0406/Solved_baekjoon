@@ -156,6 +156,7 @@
     <ItemGroup>
         <Folder Include="BaekJoon\Bronze\" />
         <Folder Include="BaekJoon\Gold\" />
+        <Folder Include="BaekJoon\Platinum\" />
         <Folder Include="BaekJoon\Silver\" />
         <Folder Include="BaekJoon\UnRank\" />
         <Folder Include="nypc2024\"/>
