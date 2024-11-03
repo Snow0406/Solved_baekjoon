@@ -156,12 +156,10 @@
     <ItemGroup>
         <Folder Include="BaekJoon\Bronze\" />
         <Folder Include="BaekJoon\Gold\" />
+        <Folder Include="BaekJoon\Platinum\" />
         <Folder Include="BaekJoon\Silver\" />
         <Folder Include="BaekJoon\UnRank\" />
         <Folder Include="nypc2024\"/>
-    </ItemGroup>
-    <ItemGroup>
-      <ClCompile Include="BaekJoon\Platinum\12844.cpp" />
     </ItemGroup>
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
     <ImportGroup Label="ExtensionTargets">
