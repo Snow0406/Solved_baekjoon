@@ -121,7 +121,6 @@ int main()
         {
             long long x;
             cin >> x;
-            // dfs_start_index[a] + 1 을 하는 이유는 나 빼고 부하들만 월급 넣어야 되서
             update_range(1, 1, N, dfs_start_index[a], dfs_end_index[a], x);
         } else
         {
