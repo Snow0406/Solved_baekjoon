@@ -162,8 +162,7 @@
         <Folder Include="nypc2024\"/>
     </ItemGroup>
     <ItemGroup>
-      <ClCompile Include="Temporary Storage\10090.cpp" />
-      <ClCompile Include="Temporary Storage\2517.cpp" />
+      <ClCompile Include="Temporary Storage\3653.cpp" />
     </ItemGroup>
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
     <ImportGroup Label="ExtensionTargets">
