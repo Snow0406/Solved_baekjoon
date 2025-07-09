@@ -155,6 +155,7 @@
     </ItemDefinitionGroup>
     <ItemGroup>
         <Folder Include="BaekJoon\Bronze\" />
+        <Folder Include="BaekJoon\Diamond\" />
         <Folder Include="BaekJoon\Gold\" />
         <Folder Include="BaekJoon\Platinum\" />
         <Folder Include="BaekJoon\Silver\" />
